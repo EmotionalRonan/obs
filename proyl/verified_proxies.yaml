@@ -1,31 +1,27 @@
-# Mihomo-Verified Working Proxy Nodes (v2)
-# Tested: 2026-08-01 10:46:03
-# Test URL: http://www.gstatic.com/generate_204 | Timeout: 5000ms
-# Verified working: 19 / 307 sampled
-# Weighted estimate: ~19 / 345 total
-#   delay=234ms  🇺🇸 US #0009
-#   delay=270ms  🇬🇧 GB #0011
-#   delay=350ms  🇪🇪 EE #0001
-#   delay=366ms  🇨🇾 CY #0002
-#   delay=373ms  🇨🇦 CA #0014
-#   delay=396ms  🇬🇧 GB #0010
-#   delay=424ms  🇲🇾 MY #0001
-#   delay=1037ms  🇺🇸 US #0032
-#   delay=1050ms  🇷🇺 RU #0008
-#   delay=1071ms  🇮🇸 IS #0001
-#   delay=1142ms  🇷🇺 RU #0006
-#   delay=1278ms  🇨🇦 CA #0041
-#   delay=1418ms  🇹🇭 TH #0002
-#   delay=2069ms  🇹🇭 TH #0001
-#   delay=2206ms  🇨🇿 CZ #0001
-#   delay=2244ms  🇲🇽 MX #0001
-#   delay=2517ms  🇺🇸 US #0034
-#   delay=3083ms  🇺🇸 US #0004
-#   delay=4150ms  🇨🇳 CN #0005
+# Mihomo-Verified Working Proxy Nodes (v2 - Full Test)
+# Tested: 2026-08-01 11:39:59
+# Test URL: http://www.gstatic.com/generate_204 | Timeout: 4000ms
+# Verified working: 15 / 378 tested
+# Total pool: 378 reachable nodes
+#   delay=206ms  🇨🇦 CA #0009
+#   delay=284ms  🇨🇾 CY #0002
+#   delay=290ms  🇺🇸 US #0009
+#   delay=336ms  🇬🇧 GB #0005
+#   delay=1043ms  🇷🇺 RU #0006
+#   delay=1068ms  🇷🇺 RU #0015
+#   delay=1331ms  🇹🇭 TH #0002
+#   delay=1564ms  🇲🇾 MY #0001
+#   delay=1769ms  🇨🇳 CN #0004
+#   delay=1999ms  🇨🇿 CZ #0001
+#   delay=2103ms  🇩🇪 DE #0025
+#   delay=2104ms  🇲🇽 MX #0001
+#   delay=2198ms  🇩🇪 DE #0024
+#   delay=3822ms  🇨🇳 CN #0007
+#   delay=3825ms  🇭🇰 HK #0015
 proxies:
-  - name: '🇺🇸 US #0009'
+  - name: '🇨🇦 CA #0009'
     type: vless
-    server: 72.167.230.30
+    server: 92.53.189.40
     port: 8880
     uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
     network: ws
@@ -33,33 +29,7 @@ proxies:
     ws-opts:
       path: /
       headers:
-        Host: vms.lifetime51.workers.dev
-    skip-cert-verify: true
-    udp: true
-  - name: '🇬🇧 GB #0011'
-    type: vless
-    server: 45.85.118.50
-    port: 8880
-    uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
-    network: ws
-    tls: false
-    ws-opts:
-      path: /
-      headers:
-        Host: vms.lifetime55.workers.dev
-    skip-cert-verify: true
-    udp: true
-  - name: '🇪🇪 EE #0001'
-    type: vless
-    server: 45.80.110.30
-    port: 8880
-    uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
-    network: ws
-    tls: false
-    ws-opts:
-      path: /
-      headers:
-        Host: vms.lifetime51.workers.dev
+        Host: vms.lifetime19.workers.dev
     skip-cert-verify: true
     udp: true
   - name: '🇨🇾 CY #0002'
@@ -75,9 +45,9 @@ proxies:
         Host: vms.lifetime59.workers.dev
     skip-cert-verify: true
     udp: true
-  - name: '🇨🇦 CA #0014'
+  - name: '🇺🇸 US #0009'
     type: vless
-    server: 92.53.189.40
+    server: 72.167.230.30
     port: 8880
     uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
     network: ws
@@ -85,10 +55,10 @@ proxies:
     ws-opts:
       path: /
       headers:
-        Host: vms.lifetime19.workers.dev
+        Host: vms.lifetime51.workers.dev
     skip-cert-verify: true
     udp: true
-  - name: '🇬🇧 GB #0010'
+  - name: '🇬🇧 GB #0005'
     type: vless
     server: 185.162.229.50
     port: 8880
@@ -99,6 +69,46 @@ proxies:
       path: /
       headers:
         Host: vms.lifetime61.workers.dev
+    skip-cert-verify: true
+    udp: true
+  - name: '🇷🇺 RU #0006'
+    type: vless
+    server: 45.155.52.231
+    port: 443
+    uuid: 219f9fec-8983-4f6f-af8c-31bd0c6dbf19
+    servername: ru2.skydrgn-online.online
+    tls: true
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: 6p0aVCkOgd-xaxqSMANYABL6O4Tdbftnxjiy5qcmISQ
+      short-id: 0b
+    skip-cert-verify: true
+    udp: true
+  - name: '🇷🇺 RU #0015'
+    type: vless
+    server: status.netraidly.ru
+    port: 40443
+    uuid: 28d0edc6-93c9-4465-bac9-720274d8b8c4
+    servername: deepl.com
+    tls: true
+    flow: xtls-rprx-vision
+    client-fingerprint: qq
+    reality-opts:
+      public-key: WRveYv8IuUyvai4jgnQ6nWCL971-wKboe8evES5arlg
+      short-id: 69d4
+    skip-cert-verify: true
+    udp: true
+  - name: '🇹🇭 TH #0002'
+    type: vless
+    server: 143.14.11.236
+    port: 80
+    uuid: f55ce6cc-3f6b-40fc-9e3b-abe26db17009
+    network: ws
+    tls: false
+    ws-opts:
+      path: /
+      headers:
+        Host: d2e1v87ko56lyw.cloudfront.net:assets.opensignal.com
     skip-cert-verify: true
     udp: true
   - name: '🇲🇾 MY #0001'
@@ -116,94 +126,14 @@ proxies:
       headers:
         Host: ajax.microsoft.com
     udp: true
-  - name: '🇺🇸 US #0032'
-    type: vless
-    server: 88.218.44.4
-    port: 993
-    uuid: 7c74b0e4-f132-5583-4692-622a7d6b71a4
-    servername: swcdn.apple.com
-    tls: true
-    flow: xtls-rprx-vision
-    client-fingerprint: chrome
-    reality-opts:
-      public-key: Nnpwm8dqFl9dlMJmg0M9G11vmgCKzNagFTn4tH4sWy4
-    skip-cert-verify: true
-    udp: true
-  - name: '🇷🇺 RU #0008'
-    type: vless
-    server: status.netraidly.ru
-    port: 40443
-    uuid: 28d0edc6-93c9-4465-bac9-720274d8b8c4
-    servername: deepl.com
-    tls: true
-    flow: xtls-rprx-vision
-    client-fingerprint: qq
-    reality-opts:
-      public-key: WRveYv8IuUyvai4jgnQ6nWCL971-wKboe8evES5arlg
-      short-id: 69d4
-    skip-cert-verify: true
-    udp: true
-  - name: '🇮🇸 IS #0001'
-    type: hysteria2
-    server: 194.247.182.201
-    port: 8080
-    password: grape_288923
-    sni: grape-coffee-fi.gleeze.com
-    skip-cert-verify: true
-    udp: true
-  - name: '🇷🇺 RU #0006'
-    type: vless
-    server: 158.160.191.91
-    port: 443
-    uuid: a5ea9247-79f3-4655-aece-3fb51e1e669e
-    servername: rezerv8.yunus.guru
-    tls: true
-    flow: xtls-rprx-vision
-    client-fingerprint: firefox
-    reality-opts:
-      public-key: 6QIHdF1dvSK8mDPOeWXvGIqJmZ2ySq5fyc7N15h1WFE
-      short-id: 34256b39b4ebb864
-    skip-cert-verify: true
-    udp: true
-  - name: '🇨🇦 CA #0041'
-    type: vless
-    server: 104.17.171.60
-    port: 2083
-    uuid: a1de0630-5786-48a0-84f6-dc6f2de10d6d
-    network: ws
-    servername: vlso6.1d.mom
-    tls: true
-    client-fingerprint: chrome
-    ws-opts:
-      path: /socks5=888:888@hkip.1d.mom:1080
-      headers:
-        Host: vlso6.1d.mom
-    skip-cert-verify: true
-    udp: true
-  - name: '🇹🇭 TH #0002'
-    type: vless
-    server: 143.14.11.236
-    port: 80
-    uuid: f55ce6cc-3f6b-40fc-9e3b-abe26db17009
-    network: ws
+  - name: '🇨🇳 CN #0004'
+    type: vmess
+    server: v4.hdacd.com
+    port: 30804
+    uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+    alterId: 2
+    cipher: auto
     tls: false
-    ws-opts:
-      path: /
-      headers:
-        Host: d2e1v87ko56lyw.cloudfront.net:assets.opensignal.com
-    skip-cert-verify: true
-    udp: true
-  - name: '🇹🇭 TH #0001'
-    type: vless
-    server: 18.239.134.69
-    port: 80
-    uuid: f55ce6cc-3f6b-40fc-9e3b-abe26db17009
-    network: ws
-    tls: false
-    ws-opts:
-      path: /
-      headers:
-        Host: d2e1v87ko56lyw.cloudfront.net:assets.opensignal.com
     skip-cert-verify: true
     udp: true
   - name: '🇨🇿 CZ #0001'
@@ -214,6 +144,19 @@ proxies:
     tls: false
     skip-cert-verify: true
     udp: true
+  - name: '🇩🇪 DE #0025'
+    type: hysteria
+    server: 5.83.129.90
+    port: 54177
+    auth_str: dongtaiwang.com
+    up: "11"
+    down: "55"
+    sni: bing.com
+    skip-cert-verify: true
+    alpn:
+      - h3
+    udp: true
+
   - name: '🇲🇽 MX #0001'
     type: vmess
     server: cindy50.ceoiii.com
@@ -229,34 +172,39 @@ proxies:
       headers:
         Host: ajax.microsoft.com
     udp: true
-  - name: '🇺🇸 US #0034'
-    type: hysteria2
-    server: 23.95.75.151
-    port: 8080
-    password: VB92_Ka9qwef143K_L23K1hz3_bF_Hz62uT_Bn1_sC
-    sni: hopp-us.yyuyy.com
+  - name: '🇩🇪 DE #0024'
+    type: hysteria
+    server: 5.83.129.153
+    port: 20088
+    auth_str: dongtaiwang.com
+    up: "500"
+    down: "1000"
+    sni: apple.com
     skip-cert-verify: true
+    alpn:
+      - h3
     udp: true
-  - name: '🇺🇸 US #0004'
-    type: vless
-    server: 103.133.1.160
-    port: 80
-    uuid: eaf76557-2219-4799-8171-d7020adfefd0
-    network: ws
-    tls: false
-    ws-opts:
-      path: /ws
-      headers:
-        Host: soft-shadow-1e33.xicav73335.workers.dev
-    skip-cert-verify: true
-    udp: true
-  - name: '🇨🇳 CN #0005'
+  - name: '🇨🇳 CN #0007'
     type: vmess
-    server: v8.hdacd.com
-    port: 30808
+    server: v33.hdacd.com
+    port: 30833
     uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
     alterId: 2
-    cipher: auto
+    cipher: none
     tls: false
+    skip-cert-verify: true
+    udp: true
+  - name: '🇭🇰 HK #0015'
+    type: vless
+    server: www.true.th
+    port: 80
+    uuid: 89c3b66f-c849-4602-a5a8-84b6f06af478
+    network: ws
+    servername: d2pwbkmfr5lxa4.cloudfront.net
+    tls: false
+    ws-opts:
+      path: /
+      headers:
+        Host: d2pwbkmfr5lxa4.cloudfront.net
     skip-cert-verify: true
     udp: true
