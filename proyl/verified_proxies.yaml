@@ -1,27 +1,30 @@
-# Mihomo-Verified Working Proxy Nodes (v2 - Full Test)
-# Tested: 2026-08-01 11:39:59
+# Mihomo-Verified Working Proxy Nodes (v2)
+# Tested: 2026-08-01 12:33:08
 # Test URL: http://www.gstatic.com/generate_204 | Timeout: 4000ms
-# Verified working: 15 / 378 tested
-# Total pool: 378 reachable nodes
-#   delay=206ms  🇨🇦 CA #0009
-#   delay=284ms  🇨🇾 CY #0002
-#   delay=290ms  🇺🇸 US #0009
-#   delay=336ms  🇬🇧 GB #0005
-#   delay=1043ms  🇷🇺 RU #0006
-#   delay=1068ms  🇷🇺 RU #0015
-#   delay=1331ms  🇹🇭 TH #0002
-#   delay=1564ms  🇲🇾 MY #0001
-#   delay=1769ms  🇨🇳 CN #0004
-#   delay=1999ms  🇨🇿 CZ #0001
-#   delay=2103ms  🇩🇪 DE #0025
-#   delay=2104ms  🇲🇽 MX #0001
-#   delay=2198ms  🇩🇪 DE #0024
-#   delay=3822ms  🇨🇳 CN #0007
-#   delay=3825ms  🇭🇰 HK #0015
+# Verified working: 18 / 200 sampled
+# Weighted estimate: ~465 / 2900 total
+#   delay=221ms  🇨🇳 CN #0011
+#   delay=781ms  🇨🇦 CA #0074
+#   delay=1147ms  🇨🇦 CA #0458
+#   delay=139ms  🇺🇸 US #0112
+#   delay=218ms  🇨🇦 CA #0878
+#   delay=195ms  🇨🇦 CA #0739
+#   delay=181ms  🇨🇦 CA #0703
+#   delay=265ms  🇺🇸 US #0274
+#   delay=122ms  🇧🇬 BG #0003
+#   delay=1070ms  🇷🇴 RO #0061
+#   delay=267ms  🇨🇦 CA #0226
+#   delay=455ms  🇨🇦 CA #0659
+#   delay=252ms  🇨🇦 CA #0459
+#   delay=256ms  🇺🇸 US #0363
+#   delay=2255ms  🇷🇴 RO #0115
+#   delay=2264ms  🇷🇴 RO #0242
+#   delay=3385ms  🇺🇸 US #0412
+#   delay=3864ms  🇺🇸 US #0243
 proxies:
-  - name: '🇨🇦 CA #0009'
+  - name: '🇨🇳 CN #0011'
     type: vless
-    server: 92.53.189.40
+    server: 176.124.223.30
     port: 8880
     uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
     network: ws
@@ -29,182 +32,274 @@ proxies:
     ws-opts:
       path: /
       headers:
-        Host: vms.lifetime19.workers.dev
+        Host: vms.lifetime38.workers.dev
     skip-cert-verify: true
     udp: true
-  - name: '🇨🇾 CY #0002'
-    type: vless
-    server: 77.75.199.30
-    port: 8880
-    uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
-    network: ws
-    tls: false
-    ws-opts:
-      path: /
-      headers:
-        Host: vms.lifetime59.workers.dev
-    skip-cert-verify: true
-    udp: true
-  - name: '🇺🇸 US #0009'
-    type: vless
-    server: 72.167.230.30
-    port: 8880
-    uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
-    network: ws
-    tls: false
-    ws-opts:
-      path: /
-      headers:
-        Host: vms.lifetime51.workers.dev
-    skip-cert-verify: true
-    udp: true
-  - name: '🇬🇧 GB #0005'
-    type: vless
-    server: 185.162.229.50
-    port: 8880
-    uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
-    network: ws
-    tls: false
-    ws-opts:
-      path: /
-      headers:
-        Host: vms.lifetime61.workers.dev
-    skip-cert-verify: true
-    udp: true
-  - name: '🇷🇺 RU #0006'
-    type: vless
-    server: 45.155.52.231
-    port: 443
-    uuid: 219f9fec-8983-4f6f-af8c-31bd0c6dbf19
-    servername: ru2.skydrgn-online.online
-    tls: true
+    _source: mibei77.com
+  - name: '🇨🇦 CA #0074'
     client-fingerprint: chrome
-    reality-opts:
-      public-key: 6p0aVCkOgd-xaxqSMANYABL6O4Tdbftnxjiy5qcmISQ
-      short-id: 0b
-    skip-cert-verify: true
-    udp: true
-  - name: '🇷🇺 RU #0015'
-    type: vless
-    server: status.netraidly.ru
-    port: 40443
-    uuid: 28d0edc6-93c9-4465-bac9-720274d8b8c4
-    servername: deepl.com
+    encryption: none
+    network: ws
+    port: 8443
+    server: 172.67.75.194
     tls: true
-    flow: xtls-rprx-vision
-    client-fingerprint: qq
-    reality-opts:
-      public-key: WRveYv8IuUyvai4jgnQ6nWCL971-wKboe8evES5arlg
-      short-id: 69d4
-    skip-cert-verify: true
-    udp: true
-  - name: '🇹🇭 TH #0002'
     type: vless
-    server: 143.14.11.236
-    port: 80
-    uuid: f55ce6cc-3f6b-40fc-9e3b-abe26db17009
-    network: ws
-    tls: false
+    udp: true
+    uuid: 767b6340-96dc-4aa0-8013-a8af7513d920
     ws-opts:
+      headers:
+        Host: c7dabe95.proxy-978.pages.dev
+        User-Agent: Mozilla/5.0 (Windows NT 6.2; Win64; x64) AppleWebKit/537.36 (KHTML,
+          like Gecko) Chrome/60.0.3112.90 Safari/537.36
       path: /
-      headers:
-        Host: d2e1v87ko56lyw.cloudfront.net:assets.opensignal.com
-    skip-cert-verify: true
-    udp: true
-  - name: '🇲🇾 MY #0001'
-    type: vmess
-    server: cindy52.ceoiii.com
-    port: 36803
-    uuid: a6ab6513-6ec3-327f-a068-b89fe72954b8
-    alterId: 0
-    cipher: auto
-    tls: false
-    skip-cert-verify: true
+    xudp: true
+    packet-encoding: xudp
+    servername: c7dabe95.proxy-978.pages.dev
+    _source: clashnode.cc
+  - name: '🇨🇦 CA #0458'
+    encryption: none
     network: ws
-    ws-opts:
-      path: /hls/cctv5phd.m3u8
-      headers:
-        Host: ajax.microsoft.com
-    udp: true
-  - name: '🇨🇳 CN #0004'
-    type: vmess
-    server: v4.hdacd.com
-    port: 30804
-    uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-    alterId: 2
-    cipher: auto
-    tls: false
-    skip-cert-verify: true
-    udp: true
-  - name: '🇨🇿 CZ #0001'
-    type: vless
-    server: 141.133.172.222
-    port: 20342
-    uuid: 5eecb34f-c905-4c77-b7fb-d830b451cd11
-    tls: false
-    skip-cert-verify: true
-    udp: true
-  - name: '🇩🇪 DE #0025'
-    type: hysteria
-    server: 5.83.129.90
-    port: 54177
-    auth_str: dongtaiwang.com
-    up: "11"
-    down: "55"
-    sni: bing.com
-    skip-cert-verify: true
-    alpn:
-      - h3
-    udp: true
-
-  - name: '🇲🇽 MX #0001'
-    type: vmess
-    server: cindy50.ceoiii.com
-    port: 36801
-    uuid: a6ab6513-6ec3-327f-a068-b89fe72954b8
-    alterId: 0
-    cipher: auto
-    tls: false
-    skip-cert-verify: true
-    network: ws
-    ws-opts:
-      path: /hls/cctv5phd.m3u8
-      headers:
-        Host: ajax.microsoft.com
-    udp: true
-  - name: '🇩🇪 DE #0024'
-    type: hysteria
-    server: 5.83.129.153
-    port: 20088
-    auth_str: dongtaiwang.com
-    up: "500"
-    down: "1000"
-    sni: apple.com
-    skip-cert-verify: true
-    alpn:
-      - h3
-    udp: true
-  - name: '🇨🇳 CN #0007'
-    type: vmess
-    server: v33.hdacd.com
-    port: 30833
-    uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-    alterId: 2
-    cipher: none
-    tls: false
-    skip-cert-verify: true
-    udp: true
-  - name: '🇭🇰 HK #0015'
-    type: vless
-    server: www.true.th
     port: 80
-    uuid: 89c3b66f-c849-4602-a5a8-84b6f06af478
-    network: ws
-    servername: d2pwbkmfr5lxa4.cloudfront.net
-    tls: false
-    ws-opts:
-      path: /
-      headers:
-        Host: d2pwbkmfr5lxa4.cloudfront.net
-    skip-cert-verify: true
+    server: 172.67.96.178
+    sub_tag: C002-260622
+    type: vless
     udp: true
+    uuid: 234c52f2-0d7b-dc4a-0d6b-b0b300000023
+    ws-opts:
+      headers:
+        Host: billowing-surf-d251.netizo06.workers.dev
+        User-Agent: Mozilla/5.0 (Linux; Android 6.0; CAM-L21 Build/HUAWEICAM-L21; wv)
+          AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/62.0.3202.84 Mobile
+          Safari/537.36
+      path: /sync
+    xudp: true
+    packet-encoding: xudp
+    servername: billowing-surf-d251.netizo06.workers.dev
+    _source: clashnode.cc
+  - name: '🇺🇸 US #0112'
+    network: ws
+    port: 8880
+    server: 89.116.161.50
+    type: vless
+    udp: true
+    uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+    ws-opts:
+      headers:
+        Host: vms.lifetime08.workers.dev
+        User-Agent: Mozilla/5.0 (Windows NT 6.2; WOW64) AppleWebKit/537.36 (KHTML, like
+          Gecko) Chrome/51.0.2704.106 Safari/537.36
+      path: /
+      early-data-header-name: Sec-WebSocket-Protocol
+      max-early-data: 2560
+    xudp: true
+    packet-encoding: xudp
+    _source: clashnode.cc
+  - name: '🇨🇦 CA #0878'
+    encryption: none
+    network: ws
+    port: 80
+    server: 162.159.40.49
+    sub_tag: C002-260622
+    type: vless
+    udp: true
+    uuid: 57bd62cf-5550-4075-8fa3-d4519aae8df0
+    ws-opts:
+      headers:
+        Host: silent-feather-8539.sddadad2233122eew.workers.dev
+        User-Agent: Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML,
+          like Gecko) Chrome/63.0.3239.132 Safari/537.36
+      path: /eyJqdW5rIjoiRURaNEp6YUhMbVlqdzQiLCJwcm90b2NvbCI6InZsIiwibW9kZSI6InByZWZpeCIsInBhbmVsSVBzIjpbIlsyNjAyOmZjNTk6YjA6NjQ6Ol0iXX0=
+    xudp: true
+    packet-encoding: xudp
+    _source: clashnode.cc
+  - name: '🇨🇦 CA #0739'
+    network: ws
+    port: 2095
+    server: cloudflare-dns.com
+    sub_tag: C002-260622
+    type: vless
+    udp: true
+    uuid: 86c50e3a-5b87-49dd-bd20-03c7f2735e40
+    ws-opts:
+      headers:
+        Host: cnmfangbinxing.fangbinxingnmsl-fuckyou.workers.dev
+        User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like
+          Gecko) Chrome/51.0.2704.103 Safari/537.36
+      path: /fp=randomized
+    xudp: true
+    packet-encoding: xudp
+    servername: cnmfangbinxing.fangbinxingnmsl-fuckyou.workers.dev
+    _source: clashnode.cc
+  - name: '🇨🇦 CA #0703'
+    encryption: none
+    network: ws
+    port: 8880
+    server: 104.16.72.21
+    sub_tag: B007-260618
+    type: vless
+    udp: true
+    uuid: 26fb53e4-fd49-4b34-b605-b6cc1b1a06a8
+    ws-opts:
+      headers:
+        Host: royal-shape-3771.93-728.workers.dev
+        User-Agent: Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like
+          Gecko) Chrome/43.0.2357.65 Safari/537.36
+      path: /pyip
+    xudp: true
+    packet-encoding: xudp
+    _source: clashnode.cc
+  - name: '🇺🇸 US #0274'
+    network: ws
+    port: 80
+    server: 45.40.155.4
+    sub_tag: C002-260622
+    type: vless
+    udp: true
+    uuid: e403856e-4e50-49e6-9edc-d9536a803a6a
+    ws-opts:
+      headers:
+        Host: proud-cloud-5c50.113-8dc.workers.dev
+        User-Agent: Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko)
+          Chrome/69.0.3497.100 Safari/537.36
+      path: /pyip=Telegram🇨🇳+@WangCai2
+    xudp: true
+    packet-encoding: xudp
+    _source: clashnode.cc
+  - name: '🇧🇬 BG #0003'
+    network: ws
+    port: 8880
+    server: 45.142.120.40
+    type: vless
+    udp: true
+    uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+    ws-opts:
+      headers:
+        Host: vms.lifetime08.workers.dev
+        User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like
+          Gecko) Chrome/44.0.2403.157 Safari/537.36
+      path: /
+      early-data-header-name: Sec-WebSocket-Protocol
+      max-early-data: 2560
+    xudp: true
+    packet-encoding: xudp
+    _source: clashnode.cc
+  - name: '🇷🇴 RO #0061'
+    port: 9002
+    server: 84.239.49.208
+    skip-cert-verify: true
+    sni: www.bing.com
+    sub_tag: P002-260618
+    tls: true
+    type: http
+    udp: true
+    _source: clashnode.cc
+  - name: '🇨🇦 CA #0226'
+    encryption: none
+    network: ws
+    port: 8080
+    server: 104.21.44.253
+    type: vless
+    udp: true
+    uuid: c6ba83a7-c4b5-481f-8f71-0f17deff0bf2
+    ws-opts:
+      headers:
+        Host: billowing-sunset-e340.qaraatayi.workers.dev
+        User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML,
+          like Gecko) Chrome/70.0.3538.67 Safari/537.36
+      path: /eyJqdW5rIjoiOUhPbnRlV0xaekI1cjciLCJwcm90b2NvbCI6InZsIiwibW9kZSI6InByZWZpeCIsInBhbmVsSVBzIjpbIlsyNjAyOmZjNTk6YjA6NjQ6Ol0iXX0=
+    xudp: true
+    packet-encoding: xudp
+    _source: clashnode.cc
+  - name: '🇨🇦 CA #0659'
+    client-fingerprint: chrome
+    network: ws
+    password: 87d1bfd4-574e-4c96-ad42-0426f27461ff
+    port: 443
+    server: join.my.telegram.channel.cmliussss.to.unlock.more.premium.nodes.cf.090227.xyz
+    skip-cert-verify: false
+    sni: _acme-challenge.sb.cloudns.biz
+    sub_tag: F003-260618
+    type: trojan
+    udp: true
+    ws-opts:
+      headers:
+        User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like
+          Gecko) Chrome/41.0.2272.118 Safari/537.36
+      path: /
+    _source: clashnode.cc
+  - name: '🇨🇦 CA #0459'
+    client-fingerprint: chrome
+    encryption: none
+    network: ws
+    port: 8443
+    server: 104.18.9.247
+    sub_tag: C002-260622
+    tls: true
+    type: vless
+    udp: true
+    uuid: 90a656ff-c77a-4b6d-87f4-a0b2cec91373
+    ws-opts:
+      headers:
+        Host: young-queen-488a.adriansheykhi730.workers.dev
+        User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like
+          Gecko) Chrome/68.0.3440.1805 Safari/537.36 MVisionPlayer/1.0.0.0
+      path: /
+    xudp: true
+    packet-encoding: xudp
+    servername: young-queen-488a.adriansheykhi730.workers.dev
+    _source: clashnode.cc
+  - name: '🇺🇸 US #0363'
+    network: ws
+    port: 8880
+    server: 160.153.138.30
+    sub_tag: C002-260622
+    type: vless
+    udp: true
+    uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+    ws-opts:
+      headers:
+        Host: vms.lifetime04.workers.dev
+        User-Agent: Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML,
+          like Gecko) Chrome/70.0.3538.67 Safari/537.36
+      path: /
+    xudp: true
+    packet-encoding: xudp
+    _source: clashnode.cc
+  - name: '🇷🇴 RO #0115'
+    port: 9002
+    server: 193.176.84.34
+    skip-cert-verify: true
+    sni: www.bing.com
+    tls: true
+    type: http
+    udp: true
+    _source: clashnode.cc
+  - name: '🇷🇴 RO #0242'
+    password: None
+    port: 9002
+    server: 84.239.14.156
+    skip-cert-verify: true
+    sub_tag: P002-260618
+    tls: true
+    type: http
+    udp: true
+    _source: clashnode.cc
+  - name: '🇺🇸 US #0412'
+    port: 9002
+    server: 156.146.59.41
+    skip-cert-verify: true
+    sub_tag: R002-260618
+    tls: true
+    type: http
+    udp: true
+    _source: clashnode.cc
+  - name: '🇺🇸 US #0243'
+    password: ''
+    port: 9002
+    server: 156.146.59.20
+    skip-cert-verify: true
+    tls: true
+    type: http
+    username: ''
+    udp: true
+    _source: clashnode.cc
